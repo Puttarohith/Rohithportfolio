@@ -9,8 +9,8 @@ import ContactSection from "@/components/section/contact-section";
 import HackathonsSection from "@/components/section/hackathons-section";
 import ProjectsSection from "@/components/section/projects-section";
 import WorkSection from "@/components/section/work-section";
+import CertificationsSection from "@/components/section/certifications-section";
 import { ArrowUpRight } from "lucide-react";
-
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
@@ -33,7 +33,7 @@ export default function Page() {
               />
             </div>
             <BlurFade delay={BLUR_FADE_DELAY} className="order-1 md:order-2">
-              <Avatar className="size-24 md:size-32 border rounded-full shadow-lg ring-4 ring-muted">
+              <Avatar className="size-32 md:size-40 lg:size-44 border rounded-full shadow-lg ring-4 ring-muted">
                 <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
@@ -131,15 +131,20 @@ export default function Page() {
         </div>
       </section>
       <section id="projects">
-        <BlurFade delay={BLUR_FADE_DELAY * 11}>
-          <ProjectsSection />
-        </BlurFade>
-      </section>
-      <section id="hackathons">
-        <BlurFade delay={BLUR_FADE_DELAY * 13}>
-          <HackathonsSection />
-        </BlurFade>
-      </section>
+  <BlurFade delay={BLUR_FADE_DELAY * 11}>
+    <ProjectsSection />
+  </BlurFade>
+</section>
+<section id="certifications">
+  <BlurFade delay={BLUR_FADE_DELAY * 12}>
+    <CertificationsSection />
+  </BlurFade>
+</section>
+<section id="hackathons">
+  <BlurFade delay={BLUR_FADE_DELAY * 13}>
+    <HackathonsSection />
+  </BlurFade>
+</section>
       <section id="contact">
         <BlurFade delay={BLUR_FADE_DELAY * 16}>
           <ContactSection />

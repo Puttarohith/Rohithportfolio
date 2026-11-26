@@ -1,59 +1,67 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
-import { ReactLight } from "@/components/ui/svgs/reactLight";
-import { NextjsIconDark } from "@/components/ui/svgs/nextjsIconDark";
-import { Typescript } from "@/components/ui/svgs/typescript";
-import { Nodejs } from "@/components/ui/svgs/nodejs";
+import { MachineLearning } from "@/components/ui/svgs/machinelearning";
+import { Tensorflow } from "@/components/ui/svgs/tensorflow";
+import { Pytorch } from "@/components/ui/svgs/pytorch";
+import { ESP32 } from "@/components/ui/svgs/esp32";
+import { MissionPlanner } from "@/components/ui/svgs/missionplanner";
+import { N8n } from "@/components/ui/svgs/n8n";
+import { Git } from "@/components/ui/svgs/git";
+import { Github } from "@/components/ui/svgs/github";
+import { Yolo } from "@/components/ui/svgs/yolo";
+import { OpenCV } from "@/components/ui/svgs/opencv";
 import { Python } from "@/components/ui/svgs/python";
-import { Golang } from "@/components/ui/svgs/golang";
-import { Postgresql } from "@/components/ui/svgs/postgresql";
+import { IoT } from "@/components/ui/svgs/iot";
+import { Arduino } from "@/components/ui/svgs/arduino";
 import { Docker } from "@/components/ui/svgs/docker";
-import { Kubernetes } from "@/components/ui/svgs/kubernetes";
-import { Java } from "@/components/ui/svgs/java";
-import { Csharp } from "@/components/ui/svgs/csharp";
+
 
 export const DATA = {
-  name: "Dillion Verma",
-  initials: "DV",
+  name: "Rohith ",
+  initials: "P",
   url: "https://dillion.io",
-  location: "San Francisco, CA",
-  locationLink: "https://www.google.com/maps/place/sanfrancisco",
+  location: "Chittoor, India",
+  locationLink: "https://share.google/gwDFP1N0cbwobxb5Q",
   description:
-    "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.",
+    "AI-focused Computer Science student passionate about machine learning, robotics, UAVs, web development, and intelligent automation.",
   summary:
     "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
   avatarUrl: "/me.png",
   skills: [
-    { name: "React", icon: ReactLight },
-    { name: "Next.js", icon: NextjsIconDark },
-    { name: "Typescript", icon: Typescript },
-    { name: "Node.js", icon: Nodejs },
+    
+    { name: "ESP32", icon: ESP32 },
+    { name: "n8n", icon: N8n },
+    { name: "YOLO", icon: Yolo },
+    { name: "TensorFlow", icon: Tensorflow },
+    { name: "Mission Planner", icon: MissionPlanner },
+    { name: "OpenCV", icon: OpenCV },
+    { name: "IoT", icon: IoT },
+    { name: "Arduino", icon: Arduino },
+    { name: "PyTorch", icon: Pytorch,},
     { name: "Python", icon: Python },
-    { name: "Go", icon: Golang },
-    { name: "Postgres", icon: Postgresql },
+    { name: "Git", icon: Git },
     { name: "Docker", icon: Docker },
-    { name: "Kubernetes", icon: Kubernetes },
-    { name: "Java", icon: Java },
-    { name: "C++", icon: Csharp },
+    { name: "Machine Learning", icon: MachineLearning },
+    { name: "GitHub", icon: Github },
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
-    email: "hello@example.com",
-    tel: "+123456789",
+    email: "puttarohithcrazy@gmail.com",
+    tel: "+91 9000060668",
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://dub.sh/dillion-github",
+        url: "https://github.com/Puttarohith",
         icon: Icons.github,
         navbar: true,
       },
 
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://dub.sh/dillion-linkedin",
+        url: "https://www.linkedin.com/in/rohith-putta-76b1b8245/",
         icon: Icons.linkedin,
 
         navbar: true,
@@ -83,159 +91,83 @@ export const DATA = {
 
   work: [
     {
-      company: "Atomic Finance",
+      company: "Omoikane Innovations Private Ltd",
       href: "https://atomic.finance",
       badges: [],
-      location: "Remote",
-      title: "Bitcoin Protocol Engineer",
-      logoUrl: "/atomic.png",
-      start: "May 2021",
-      end: "Oct 2022",
+      location: "Hybrid",
+      title: "Firmware Intern",
+      logoUrl: "/Omoikane.png",
+      start: "May 2026",
+      end: "Present",
       description:
         "Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
-    },
-    {
-      company: "Shopify",
-      badges: [],
-      href: "https://shopify.com",
-      location: "Remote",
-      title: "Software Engineer",
-      logoUrl: "/shopify.svg",
-      start: "January 2021",
-      end: "April 2021",
-      description:
-        "Implemented a custom Kubernetes controller in Go to automate the deployment of MySQL and ProxySQL custom resources in order to enable 2,000+ internal developers to instantly deploy their app databases to production. Wrote several scripts in Go to automate MySQL database failovers while maintaining master-slave replication topologies and keeping Zookeeper nodes consistent with changes.",
-    },
-    {
-      company: "Nvidia",
-      href: "https://nvidia.com/",
-      badges: [],
-      location: "Santa Clara, CA",
-      title: "Software Engineer",
-      logoUrl: "/nvidia.png",
-      start: "January 2020",
-      end: "April 2020",
-      description:
-        "Architected and wrote the entire MVP of the GeForce Now Cloud Gaming internal admin and A/B testing dashboard using React, Redux, TypeScript, and Python.",
-    },
-    {
-      company: "Splunk",
-      href: "https://splunk.com",
-      badges: [],
-      location: "San Jose, CA",
-      title: "Software Engineer",
-      logoUrl: "/splunk.svg",
-      start: "January 2019",
-      end: "April 2019",
-      description:
-        "Co-developed a prototype iOS app with another intern in Swift for the new Splunk Phantom security orchestration product (later publicly demoed and launched at .conf annual conference in Las Vegas). Implemented a realtime service for the iOS app in Django (Python) and C++; serialized data using protobufs transmitted over gRPC resulting in an approximate 500% increase in data throughput.",
-    },
-    {
-      company: "Lime",
-      href: "https://li.me/",
-      badges: [],
-      location: "San Francisco, CA",
-      title: "Software Engineer",
-      logoUrl: "/lime.svg",
-      start: "January 2018",
-      end: "April 2018",
-      description:
-        "Proposed and implemented an internal ruby API for sending/receiving commands to scooters over LTE networks. Developed a fully automated bike firmware update system to handle asynchronous firmware updates of over 100,000+ scooters worldwide, and provide progress reports in real-time using React, Ruby on Rails, PostgreSQL and AWS EC2 saving hundreds of developer hours.",
-    },
-    {
-      company: "Mitre Media",
-      href: "https://mitremedia.com/",
-      badges: [],
-      location: "Toronto, ON",
-      title: "Software Engineer",
-      logoUrl: "/mitremedia.png",
-      start: "May 2017",
-      end: "August 2017",
-      description:
-        "Designed and implemented a robust password encryption and browser cookie storage system in Ruby on Rails. Leveraged the Yahoo finance API to develop the dividend.com equity screener",
     },
   ],
   education: [
     {
-      school: "Buildspace",
-      href: "https://buildspace.so",
-      degree: "s3, s4, sf1, s5",
-      logoUrl: "/buildspace.jpg",
+      school: "Vemu Institute of Technology",
+      href: "http://www.vemu.org/",
+      degree: "Bachelor of Technology in Computer Science Engineering with a specialization in Artificial Intelligence.",
+      logoUrl: "/vemu.jfif",
       start: "2023",
-      end: "2024",
+      end: "2027",
     },
-    {
-      school: "University of Waterloo",
-      href: "https://uwaterloo.ca",
-      degree: "Bachelor's Degree of Computer Science (BCS)",
-      logoUrl: "/waterloo.png",
-      start: "2016",
-      end: "2021",
-    },
-    {
-      school: "Wilfrid Laurier University",
-      href: "https://wlu.ca",
-      degree: "Bachelor's Degree of Business Administration (BBA)",
-      logoUrl: "/laurier.png",
-      start: "2016",
-      end: "2021",
-    },
-    {
-      school: "International Baccalaureate",
-      href: "https://ibo.org",
-      degree: "IB Diploma",
-      logoUrl: "/ib.png",
-      start: "2012",
-      end: "2016",
-    },
+    
   ],
   projects: [
     {
-      title: "Chat Collect",
-      href: "https://chatcollect.com",
-      dates: "Jan 2024 - Feb 2024",
+      title: "Line Following Robot",
+      href: "", // add git hub repo of line following robot
+      dates: "Sep 2025",
       active: true,
       description:
         "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        "Arduino",
+        "L298N Motor Driver",
+        "DC Geared Motors",
+        "Robot Chassis",
+        "Battery Pack",
+        "PWM (Pulse Width Modulation)",
+        "Digital Sensor Interfacing",
       ],
-      links: [
+    
+      links: [ // u can use this if u made any project like website it takes to the website
+        /*
         {
           type: "Website",
           href: "https://chatcollect.com",
           icon: <Icons.globe className="size-3" />,
         },
+        */
+        {
+          type: "Source",
+          href: "https://github.com/magicuidesign/magicui",
+          icon: <Icons.github className="size-3" />,
+        },
       ],
+      
       image: "",
       video:
         "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
     },
     {
-      title: "Magic UI",
+      title: "Swarm UAV Communication System",
       href: "https://magicui.design",
-      dates: "June 2023 - Present",
+      dates: "May 2026 - Present",
       active: true,
       description:
-        "Designed, developed and sold animated UI components for developers.",
+        "Currently developing a Swarm UAV Communication System enabling autonomous multi-drone coordination, real-time telemetry exchange, and scalable aerial mission collaboration.",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        "MavLink",
+        "ExpressLRS",
+        "Swarm",
+        "Mesh Communication",
+        "Telemetry",
       ],
+      
       links: [
+        /*
         {
           type: "Website",
           href: "https://magicui.design",
@@ -246,6 +178,7 @@ export const DATA = {
           href: "https://github.com/magicuidesign/magicui",
           icon: <Icons.github className="size-3" />,
         },
+        */
       ],
       image: "",
       video: "https://cdn.magicui.design/bento-grid.mp4",
@@ -312,7 +245,34 @@ export const DATA = {
       video:
         "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
     },
-  ],
+],
+certifications: [
+  {
+    title: "Career Boost Workshop on DSA & Data Science",
+    issuer: "HackBriven × GeeksforGeeks",
+    logo: "/logos/gfg.png",
+    certificate: "/certificates/gfg.jpeg",
+  },
+  {
+    title: "Quantum Fundamentals Program",
+    issuer: "WISER, in collaboration with Amaravati Quantum Valley & Qubitech",
+    logo: "/logos/wiser.png",
+    certificate: "/certificates/wiser.jpeg",
+  },
+  {
+    title: "Professional Diploma in Agile Product Management",
+    issuer: "Udemy • MTF Institute of Management, Technology and Finance",
+    logo: "/logos/udemy.jpeg",
+    certificate: "/certificates/udemy.jpeg",
+  },
+  {
+  title: "Solutions Architecture Job Simulation",
+  issuer: "AWS Forage",
+  logo: "/logos/forage.png",
+  certificate: "/certificates/forage.pdf",
+}
+  
+],
   hackathons: [
     {
       title: "Hack Western 5",
